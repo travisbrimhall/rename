@@ -1,10 +1,3 @@
-#
-# how to run this:
-#
-# bash rename_to_base.sh yourRemote targetBranchName
-#
-#
-#
 NC='\033[0m' # No Color
 blue='\e[38;5;81m'
 red='\033[01;31m'
