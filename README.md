@@ -1,4 +1,4 @@
-**Language is the repository of our prejudices, our beliefs, our assumptions.**
+**Language is the repository of our prejudices, our beliefs, our assumptions.**  
 *Chimamanda Ngozi Adichie*
 
 We made this script to help folks update the repositories that house their code, and their thoughts.
