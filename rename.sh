@@ -48,6 +48,8 @@ FAILED_COUNT=0
 FAILED_REPOS=()
 #TODO: add successful repos array?
 
+CURRENT_DIR_NAME=${PWD##*/}
+
 for repo in ./*; do #This looks at every file in the current directory
 
   if [[ ! -d "$repo" || ! -e "$repo/.git" ]]; then # If the file is not a directory or doesn't contain a .git file
@@ -58,7 +60,6 @@ for repo in ./*; do #This looks at every file in the current directory
   printf "${purple}========================================${NC} \n"
   echo
   cd $repo # Now we're sure that we're in a git repo
-  CURRENT_DIR_NAME=${PWD##*/}
 
   printf "${bold}working on ${blue}$CURRENT_DIR_NAME${NC}${bold}...${NC}\n"
   # list if there is a branch on the remote with the target name, and give the command an exit code that 
