@@ -120,4 +120,10 @@ if [ $FAILED_COUNT != 0 ]
   printf "go back and take a look at ${bold}${FAILED_REPOS[@]}${NC} to see what went wrong. godspeed."
 fi
 
+if [[ $SUCCESSFUL_COUNT == 0 && $FAILED_COUNT == 0 && $ALREADY_COUNT == 0 ]]
+  then
+  printf "${bold}${red}Looks like there are no git repos in this folder.${NC}"
+  echo
+fi
+
 echo
