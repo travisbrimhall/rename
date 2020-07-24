@@ -122,7 +122,7 @@ fi
 
 if [[ $SUCCESSFUL_COUNT == 0 && $FAILED_COUNT == 0 && $ALREADY_COUNT == 0 ]]
   then
-  printf "${bold}${red}Looks like there are not git repos in this folder. ${NC} \n"
+  printf "${bold}${red}Looks like there are no git repos in this folder. ${NC} \n"
   printf "You are currenlty in ${bold}${blue}${CURRENT_DIR_NAME}${NC}"
   echo
 fi
